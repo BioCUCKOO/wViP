@@ -1,0 +1,354 @@
+tr:has(input[name="innerWordSelect"]:checked, span) {
+    background: #c3e6ee;
+}
+
+#frequency_tbody {
+    vertical-align: unset;
+}
+
+.table {
+    vertical-align: unset;
+}
+
+.word_freq_tr td {
+    width: 0.1%;
+    /* wtf? */
+    font-weight: bold;
+    border-right: 1px solid #cccccc;
+}
+
+td.td1_3 .btn-danger {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    /* 绝对定位的盒子垂直居中 */
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.next {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.wordcloud_pic {
+    display: none;
+}
+
+.active_pic {
+    display: list-item;
+}
+
+.wordcloud_pic img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+    position: absolute;
+    transform: translate(2.5%, -9px);
+}
+
+.wordcloud_pic_dots {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+
+.wordcloud_pic_dots li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.wordcloud_pic_dots .active_pic_dot {
+    background-color: #ff5000;
+}
+
+.main_left_panel {
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main_right_panel {
+    height: 51px;
+    padding: 0;
+}
+
+.main_left_panel>*,
+.main_right_panel>* {
+    flex: 1;
+    margin: 0;
+}
+
+.btn-outline-primary {
+    width: 100%;
+}
+
+.LLM-apply-btn {
+    outline: auto;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+
+.gpt_res_notice {
+    display: inline-block;
+    background: #888b8d;
+    color: rgb(254,222,0);
+    border-radius: 3px;
+    width: 100%;
+    padding: 0 5px;
+}
+
+#interruptButton {
+    position: absolute;
+    z-index: 19000;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: auto;
+    padding: 8px 12px;
+    font-size: 18px;
+}
+
+/* index console panel */
+#console_div >*{
+    flex: 1;
+}
+#console_div button{
+    height: 100%;
+    width: 100%;
+}
+
+#record_table {
+    text-wrap: nowrap;
+}
+
+#main_div form {
+    display: flex;
+}
+
+.custom-btn-group {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+}
+
+.custom-btn-group button {
+    flex: 1;
+}
+
+#LLM_select:hover {
+    -webkit-box-shadow: 0 0 0 4px rgba(18,33,121,0.25);
+    box-shadow: 0 0 0 4px rgba(18,33,121,0.25);
+}
+
+.fa.fa-question-circle {
+    color:#198754;margin-left:5px;
+}
+
+#father_div_father {
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/homepage-backgroud-1.jpg'), url('../img/homepage-backgroud-2.jpg'), url('../img/homepage-backgroud-3.jpg');
+    animation: changeBackground 20s infinite;
+    -moz-animation: changeBackground 20s infinite ; /* Firefox */
+	-webkit-animation: changeBackground 20s infinite ; /* Safari and Chrome */
+	-o-animation: changeBackground 20s infinite ; /* Opera */
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('../img/homepage-backgroud-1.jpg');
+    }
+    16% {
+        background-image: url('../img/homepage-backgroud-1.jpg');
+    }
+    33.33% {
+        background-image: url('../img/homepage-backgroud-2.jpg');
+    }
+    50% {
+        background-image: url('../img/homepage-backgroud-2.jpg');
+    }
+    66.66% {
+        background-image: url('../img/homepage-backgroud-3.jpg');
+    }
+    83% {
+        background-image: url('../img/homepage-backgroud-3.jpg');
+    }
+}
+
+.head_highlight {
+    color: white;
+}
+
+.text_highlight {
+    color: #0b148a;
+    font-weight: bold;
+}
+
+a.doc_link {
+    display: inline;
+    color: #4065e5;
+    font-weight: bold;
+}
+
+a.doc_link::after {
+    content: '\f08e';
+    font-family: FontAwesome;
+    margin-left: 3px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+#index-table th, #index-table td {
+    padding: 8px;
+    font-weight: bold;
+}
+
+
+td.statistics, td.description, td.td-wvip {
+    border-right: 1px solid #ccc;
+}
+
+td.description {
+    width: 400px;
+    word-break: break-word;
+}
+.fa.fa-times {
+    color: red;
+}
+
+
+.doc_insert_img {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.menu-text {
+    font-size: 20px;
+}
+
+
+
+
+.cookie {
+    text-decoration: none;
+    position: fixed;
+    left: 30px;
+    z-index: 999;
+    display: block;
+    padding: 0 10px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 50px;
+    cursor: pointer;
+    background-color: #1C5A99;
+    font-weight: bold !important;
+    background-position: left center;
+    color: #FFF;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    bottom: 40px;
+    border-radius: 4px;
+}
+
+.cookie:hover {
+    background-color: #2371bf;
+    color: #FFF;
+    transform: scale(.97);
+    transition: .2s;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 19000;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.loading .pic {
+    width: 64px;
+    height: 64px;
+    background: url('/static/client/img/Molecular DNA.gif');
+    z-index: 19000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress_div {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 19999;
+    display: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.progress_div .progress {
+    width: 100%;
+    height: 64px;
+    z-index: 19999;
+    position: absolute;
+    border-radius: 0px;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+    height: 4px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #c7c4c4;
+}
+
+html::-webkit-scrollbar-track {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2) inset;
+
+}
+
+html::-webkit-scrollbar-corner {
+    background: transparent;
+}
